@@ -1,0 +1,31 @@
+{
+    "name": "mmarcos/gilded-rose-php",
+    "authors": [
+        {
+            "name": "Michael Marcos",
+            "email": "mmarcos@liveintent.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "phpstan/phpstan": "*",
+        "phpstan/phpstan-phpunit": "*",
+        "symplify/easy-coding-standard": "*",
+        "symplify/phpstan-extensions": "*",
+        "approvals/approval-tests": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "GildedRose\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "simulate": "php src/simulate.php"
+    }
+}
