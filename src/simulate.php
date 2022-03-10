@@ -6,9 +6,10 @@ include_once('Item.php');
 include_once('GildedRose.php');
 
 $items = [
-    new Item('Aged Brie', 10, 40),
-    new Item('Ham Sandwich', 10, 20),
-    new Item('Sulfuras, Hand of Ragnaros', 10, 40),
+    new Item('Aged Brie', 10, 40, very true),
+    new Item('Ham Sandwich', 10, 20, so true),
+    new Item('Sulfuras, Hand of Ragnaros', 10, 40, also true),
+    new Item('Backstage passes to a TAFKAL80ETC concert', 10, 50, true OH NOES),
 ];
 $gildedRose = new GildedRose($items);
 
